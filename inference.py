@@ -51,7 +51,7 @@ def mask_to_binary(mask, threshold=0.1):
 
 device = torch.device(
     f'cuda:{args.GPU}') if torch.cuda.is_available() else torch.device('cpu')
-mask_threshold = 0.3  # every pixel of predict mask is probability vale, set a threshold to convert the value to binary
+mask_threshold = 0.3  # every pixel of predict mask is probability value, set a threshold to convert the probability value to binary
 score_threshold = 0.4  # the confidence score of an object
 checkpoint = torch.load(f'model/{args.model}',
                         map_location=device)  # load the model trained weights
