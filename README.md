@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ## Dataset Preparation
 The tiny VOC dataset is come from the orignal Pascal VOC dataset and modified to smaller one.
-get it from [here] (https://drive.google.com/drive/folders/1fGg03EdBAxjFumGHHNhMrz2sMLLH04FK) and rename the train_images/ folder to pascal_train/
+get it from [here] (https://drive.google.com/drive/folders/1fGg03EdBAxjFumGHHNhMrz2sMLLH04FK) and rename the train_images/ folder to "pascal_train"
 The pascal_train.json file is the annotation of the training set.
 test.json file is to generate the test result of this assignment.
 Also, see [data_loader.ipynb](https://github.com/NCTU-VRDL/CS_IOC5008/blob/master/HW4/data_loader.ipynb) for more details.
@@ -46,7 +46,7 @@ All the data augmentation processes are included in the cocodataset.py.
 
 ## Training
 
-Rename the train_images/ folder to pascal_train/ before training.
+Rename the train_images/ folder to "pascal_train" before training.
 
 Training the model, just run this code, and the model weights will be saved in the model/ folder.
 ```
